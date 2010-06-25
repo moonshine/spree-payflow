@@ -1,4 +1,4 @@
-= Payflow
+# Payflow
 
 This extension allows payments to be processed via the Payflow gateway.
 
