@@ -44,6 +44,8 @@ I've included the payments partial in this extension where I've renamed the butt
 "save & continue" to "Confirm & complete order". This partial may need further modification
 to display a page more like the normal confirm page providing more details about the order.
 
+UPDATE: I have turned the Confirm step back on default by setting payment_profiles_supported? to true. This is NOT recommended.
+
 ### Payflow Documentation
 
 Payflow documentation is availabe from here:
@@ -54,4 +56,8 @@ I found the Payflow Developers Guide useful and this can be found here:
 
 https://cms.paypal.com/cms_content/US/en_US/files/developer/PP_PayflowPro_Guide.pdf
 
+### Payflow Documentation
 
+Write Tests
+
+Write Recurring Billing

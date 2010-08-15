@@ -3,12 +3,17 @@
 
 class PayflowExtension < Spree::Extension
   version "1.0"
-  description "Describe your extension here"
-  url "http://yourwebsite.com/payflow"
-  
-  def activate
-    # Register payflow payment gateway
-    Gateway::PayFlow.register
+  description "Paypal Payflow Gateway"
+  url "http://github.com/moonshine/spree-payflow"
 
+  # Register payflow payment gateway
+  def activate
+    begin
+      Gateway::PayFlow.register
+    rescue Exception => e
+      $stderr.puts "Error registering gateway #{Gateway::PayFlow}: #{e}"
+    end
   end
+
+
 end
