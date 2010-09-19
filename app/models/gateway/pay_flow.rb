@@ -1,6 +1,6 @@
 class Gateway::PayFlow < Gateway
   preference :login, :string
-  preference :password, :string
+  preference :password, :password
   preference :partner, :string
 
   def provider_class
